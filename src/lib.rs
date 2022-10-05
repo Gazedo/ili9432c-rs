@@ -31,7 +31,7 @@ use display_interface::DataFormat::{U16BEIter, U8Iter};
 use display_interface::WriteOnlyDataCommand;
 
 // mod graphics_core;
-use embedded_graphics::{
+use embedded_graphics_core::{
     pixelcolor::{raw::RawU16, Rgb565},
     prelude::*,
     primitives::Rectangle,
@@ -40,7 +40,7 @@ use embedded_graphics::{
 pub use embedded_hal::spi::MODE_0 as SPI_MODE;
 
 pub use display_interface::DisplayError;
-use embedded_graphics::draw_target::DrawTarget;
+use embedded_graphics_core::draw_target::DrawTarget;
 
 type Result<T = (), E = DisplayError> = core::result::Result<T, E>;
 
