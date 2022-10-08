@@ -6,6 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-embedded-hal = {version="*"}
-embedded-graphics-core = { version = "*"}
-display-interface = "*"
+embedded-hal = {version="*", default-features=false}
+embedded-graphics-core = { version = "*", default-features = false}
+display-interface = {version = "*", default-features = false}

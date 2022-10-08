@@ -1,3 +1,4 @@
+#![no_std]
 //! ILI9341 Display Driver
 //!
 //! ### Usage
