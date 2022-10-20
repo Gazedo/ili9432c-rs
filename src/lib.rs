@@ -24,10 +24,11 @@
 //! ```
 //!
 //! [display-interface-spi crate]: https://crates.io/crates/display-interface-spi
-use embedded_hal::blocking::delay::DelayMs;
+use embedded_hal_0_2::blocking::delay::DelayMs;
 // use embedded_hal::delay::blocking::DelayUs;
 
 use core::iter::once;
+// use embedded_hal::spi::
 use display_interface::DataFormat::{U16BEIter, U8Iter};
 use display_interface::WriteOnlyDataCommand;
 
